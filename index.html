@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Coding Assesment L2 boilerplate</title>
+    <script src="https://kit.fontawesome.com/edeadcb315.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- Your code goes here -->
+    <div class="page-container">
+        <!-- Header -->
+        <header class="header">
+            <nav class="nav-container">
+                <div class="logo"><i class="fa-brands fa-square-pied-piper"></i></div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fa-solid fa-bars"></i></button>
+                <div class="nav-links">
+                    <a href="#" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">Shop</a>
+                    <a href="#" class="nav-link">About</a>
+                    <a href="#" class="nav-link">Contact</a>
+                </div>
+                <div class="cart-icon">🛒</div>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="cart-container">
+                <!-- Cart Items Section -->
+                <section class="cart-items">
+                    <h2>Shopping Cart</h2>
+                    <div class="cart-items-list" id="cartItemsList">
+                        <!-- Cart items will be dynamically inserted here -->
+                    </div>
+                </section>
+
+                <!-- Cart Totals Section -->
+                <section class="cart-totals">
+                    <h3>Cart Totals</h3>
+                    <div class="totals-content">
+                        <div class="subtotal-row">
+                            <span>Subtotal</span>
+                            <span id="subtotalAmount">₹0.00</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Total</span>
+                            <span id="totalAmount">₹0.00</span>
+                        </div>
+                        <button class="checkout-button">Check Out</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="service-icons">
+                <div class="service-item">
+                    <span class="service-icon">⭐</span>
+                    <span>High Quality</span>
+                </div>
+                <div class="service-item">
+                    <span class="service-icon">🛡️</span>
+                    <span>Warranty Protection</span>
+                </div>
+                <div class="service-item">
+                    <span class="service-icon">🚚</span>
+                    <span>Free Shipping</span>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Remove Item Confirmation Modal -->
+        <div class="modal" id="removeItemModal">
+            <div class="modal-content">
+                <h3>Remove Item</h3>
+                <p>Are you sure you want to remove this item from your cart?</p>
+                <div class="modal-buttons">
+                    <button id="confirmRemove">Yes, Remove</button>
+                    <button id="cancelRemove">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading Spinner -->
+        <div class="loader" id="loader">
+            <div class="spinner"></div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
+<!--END--->
