@@ -53,4 +53,3 @@ Take a moment to review the project structure:
 - Ensure that your project works as intended and is free from errors.
 - Make sure to include clear instructions on how to run your project (if necessary).
 
-Good luck! We look forward to reviewing your submission.
